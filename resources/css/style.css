@@ -1,0 +1,118 @@
+*,
+*::before,
+*::after {
+    padding: 0;
+    margin: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+
+html {
+  font-family: Arial, Helvetica, sans-serif;
+  color: rgb(65, 45, 45);  
+}
+
+.header {
+    height: 64px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    
+}
+
+.hearer-logo {
+    height: 50px;
+    margin-left: 20px;
+    margin-top: 0.2em;
+    
+
+}
+
+.header-list {
+    display: flex; 
+    position: absolute;
+    right: 24px;
+    font-size: 24px;
+    align-items: center;
+    line-height: 2.5em;
+}
+
+.signin {
+    padding-left: 16px;   
+    
+}
+
+.forcompanies {
+    padding-left: 16px;
+}
+
+.online {
+    padding-left: 16px;
+    
+}
+
+
+.brand {
+    font-size: 24px;    
+    position: relative;
+    line-height: 2.5em;
+}
+
+body {
+    
+}
+
+.wrapper {
+    min-height: 100%;
+    overflow: hidden;
+}
+
+#banner-div {
+    top: 64px;
+    left: 0px;
+    background-color: lightgray;
+    display: flex;
+    width: 100%;
+    position: absolute;
+    align-items: flex-start;
+    
+}
+
+.banner-text {
+   background-color: khaki;
+   
+  
+}
+
+.banner {
+    margin-top: px;
+    padding: 32px 24px;
+    width: 60%;
+    
+}
+
+.learn-smth {
+    font-weight: 800;
+    font-size: 60px;
+    display: inline-block;
+    margin-bottom: 0px;
+    
+}
+
+.lorem {
+    font-weight: 800;
+    font-size: 30px;
+    display: inline-block;
+    
+}
+
+.start-here {
+    font-size: 30px;
+    background-color: rgb(65, 45, 45); 
+    color: white;
+    text-align: center;
+    display: inline-block;
+    padding: 8px 210px;
+    
+}
