@@ -7,10 +7,16 @@
     box-sizing: border-box;
 }
 
+html,
+body {
+  height: 100%;
+  line-height: 1;
+  font-family: Montserrat;
+  color: rgb(73, 72, 72);  
+}
 
-html {
-  font-family: Arial, Helvetica, sans-serif;
-  color: rgb(65, 45, 45);  
+img {
+    vertical-align: top;
 }
 
 .header {
@@ -24,9 +30,15 @@ html {
 .hearer-logo {
     height: 50px;
     margin-left: 20px;
-    margin-top: 0.2em;
+    margin-top: 0.6em;
     
+}
 
+.brand {
+    font-size: 24px;    
+    position: relative;
+    line-height: 2.7em;
+    
 }
 
 .header-list {
@@ -35,7 +47,7 @@ html {
     right: 24px;
     font-size: 24px;
     align-items: center;
-    line-height: 2.5em;
+    line-height: 2.7em;
 }
 
 .signin {
@@ -52,17 +64,6 @@ html {
     
 }
 
-
-.brand {
-    font-size: 24px;    
-    position: relative;
-    line-height: 2.5em;
-}
-
-body {
-    
-}
-
 .wrapper {
     min-height: 100%;
     overflow: hidden;
@@ -70,49 +71,77 @@ body {
 
 #banner-div {
     top: 64px;
-    left: 0px;
     background-color: lightgray;
     display: flex;
-    width: 100%;
-    position: absolute;
-    align-items: flex-start;
     
 }
 
+
 .banner-text {
-   background-color: khaki;
-   
-  
+   padding-top: 190px;
+    
 }
 
 .banner {
-    margin-top: px;
     padding: 32px 24px;
     width: 60%;
     
 }
 
+
 .learn-smth {
-    font-weight: 800;
-    font-size: 60px;
+    font-weight: 700;
+    font-size: 70px;
+    line-height: 1.2;
     display: inline-block;
     margin-bottom: 0px;
     
 }
 
 .lorem {
-    font-weight: 800;
-    font-size: 30px;
+    font-weight: 600;
+    font-size: 38px;
     display: inline-block;
-    
+    padding-top: 40px;
+    padding-bottom: 60px;
 }
 
 .start-here {
-    font-size: 30px;
-    background-color: rgb(65, 45, 45); 
+    font-size: 33px;
+    background-color: rgb(73, 72, 72); 
     color: white;
     text-align: center;
     display: inline-block;
     padding: 8px 210px;
     
+}
+
+#main-info-div {
+
+
+}
+
+.main-info-banner {
+    padding: 32px 24px;
+    width: 60%;
+}
+
+.main-info-header {
+    font-size: 50px;
+    font-weight: 800;
+    padding: 0 0 32px 24px;
+}
+
+.curabitur {
+    font-size: 25px;
+    font-weight: 400;
+    padding-left: 24px;
+    
+    line-height: 1.5;
+}
+
+.signature {
+    font-size: 22px;
+    font-weight: 500;
+    padding: 32px 24px;
 }
