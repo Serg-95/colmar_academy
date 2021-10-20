@@ -6,20 +6,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Colmar Academy</title>
     <link rel="stylesheet" type="text/css" href="./resources/css/style.css">
-    <link href="https://fonts.googleapis.com/css?family=Montserrat:100,100italic,200,200italic,300,300italic,regular,italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:100,200,300,regular,500,600,700,800,,900&display=swap" rel="stylesheet"/>
 </head>
-<div class="header">
-    <img class="hearer-logo" src="./resources/images/ic-logo.svg"> 
-    <p class="brand"><b>COLMAR</b>ACADEMY</p>
-    <div class="header-list">
-        <p class="oncampus">On campus</p>
-        <p class="online">Online</p>
-        <p class="forcompanies">For companies</p>
-        <p class="signin">Sign in</p>
-    </div>      
-</div>    
+
 <body>
     <div class="wrapper">
+        <div class="header">
+          <img class="hearer-logo" src="./resources/images/ic-logo.svg"> 
+          <p class="brand"><b>COLMAR</b>ACADEMY</p>
+          <nav class="header-list">
+            <span><a href="#">On campus</a></span>
+            <span><a href="#">Online</a></span>
+            <span><a href="#">For companies</a></span>
+            <span><a href="#">Sign in</a></span>  
+          </nav>  
+        </div>
         <div id="banner-div">
             <img class="banner" src="./resources/images/banner.jpg">     
             <div class="banner-text">
@@ -28,11 +29,37 @@
               <p class="start-here">Start here</p>
             </div>     
         </div>
+        <!--Main info div-->
         <div id="main-info-div">
+            <div class="vertical-line"></div>
             <img class="main-info-banner" src="./resources/images/information-main.jpg">
-            <p class="main-info-header">It doesn't hurt to keep practicing</p>    
-            <p class="curabitur">"Curabitur vitae libero in ipsum porttitor consequat. Aliquam et commodo lectus,<br>nec consequat neque. Sed non accumsan urna. Phasellus sed consequat ex. Etiam<br>eget magna laoreet, efficitur dolor consequat, tristique ligula."</p>
-            <p class="signature">Emanuel, Sr Strategist at Hiring.com</p>
+            <div class="under-banner-text">
+              <h2 class="main-info-header">It doesn't hurt to keep practicing</h2>    
+              <p class="curabitur">"Curabitur vitae libero in ipsum porttitor consequat. Aliquam et commodo lectus,<br>nec consequat neque. Sed non accumsan urna. Phasellus sed consequat ex. Etiam<br>eget magna laoreet, efficitur dolor consequat, tristique ligula."</p>
+              <p class="signature">Emanuel, Sr Strategist at Hiring.com</p>
+            </div> 
+        <!--3 фото справа в Main-info-div-->    
+            <div class="main-info-images-div">
+                <div class="horizontal-lines"></div>
+                <div class="orientation">
+                    <img class="main-info-img" src="./resources/images/information-orientation.jpg">
+                    <h2 class="main-info-headers">Orientation date</h2>
+                    <p>Tue 10/11 & Wed 10/12: 8am-3pm</p>
+                    <p class="readmore">Read more</p>
+                </div>
+                <div class="campus">
+                    <img class="main-info-img" src="./resources/images/information-campus.jpg">
+                    <h2 class="main-info-headers">Our campus</h2>
+                    <p>Find which campus is close by you</p>
+                    <p class="readmore">Read more</p>
+                </div>
+                <div class="guest">
+                    <img class="main-info-img" src="./resources/images/information-guest-lecture.jpg">
+                    <h2 class="main-info-headers">Our guest lecture</h2>
+                    <p>Join a keynote with Oliver Sack<br>about music in medical treatment</p>
+                    <p class="readmore">Read more</p>
+                </div>
+            </div>
         </div>
     </div>
 </body>

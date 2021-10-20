@@ -7,11 +7,22 @@
     box-sizing: border-box;
 }
 
+a {
+    text-decoration: 0;
+}
+
+ul,
+ol,
+li {
+    list-style: none;
+}
+
 html,
 body {
   height: 100%;
   line-height: 1;
   font-family: Montserrat;
+  font-size: 16px;
   color: rgb(73, 72, 72);  
 }
 
@@ -20,10 +31,13 @@ img {
 }
 
 .header {
-    height: 64px;
+    
     display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
+    height: 64px;
+    width: 100%;
+    left: 0;
+    top: 0;
+    z-index: 50;
     
 }
 
@@ -38,31 +52,29 @@ img {
     font-size: 24px;    
     position: relative;
     line-height: 2.7em;
-    
 }
+
 
 .header-list {
-    display: flex; 
     position: absolute;
+    display: flex; 
+    font-size: 30px;
+    font-weight: 500;
+    line-height: 2em;
     right: 24px;
-    font-size: 24px;
-    align-items: center;
-    line-height: 2.7em;
-}
-
-.signin {
-    padding-left: 16px;   
     
 }
 
-.forcompanies {
+a {
+    color: rgb(73, 72, 72); 
     padding-left: 16px;
 }
 
-.online {
-    padding-left: 16px;
+.menu-item {
+    margin: 0 0 0 16px;
     
 }
+
 
 .wrapper {
     min-height: 100%;
@@ -70,15 +82,29 @@ img {
 }
 
 #banner-div {
+    display: flex;
+    width: 100%;
     top: 64px;
     background-color: lightgray;
-    display: flex;
+    align-items: center;
     
 }
 
-
 .banner-text {
-   padding-top: 190px;
+   display: flex;
+   flex-direction: column;
+   width: 100%;
+   margin: 24px 0px;
+  
+}
+
+.start-here {
+    text-align: center;
+    font-size: 33px;
+    background-color: rgb(73, 72, 72); 
+    color: white;
+    padding: 8px 75px;
+    width: 75%;
     
 }
 
@@ -88,37 +114,67 @@ img {
     
 }
 
-
 .learn-smth {
+    
     font-weight: 700;
     font-size: 70px;
     line-height: 1.2;
-    display: inline-block;
-    margin-bottom: 0px;
     
 }
 
 .lorem {
     font-weight: 600;
     font-size: 38px;
-    display: inline-block;
     padding-top: 40px;
     padding-bottom: 60px;
+    
+}
+  
+#main-info-div {
+    display: flex;
+    flex-direction: column;
+    position: relative;
 }
 
-.start-here {
-    font-size: 33px;
-    background-color: rgb(73, 72, 72); 
-    color: white;
-    text-align: center;
-    display: inline-block;
-    padding: 8px 210px;
+.vertical-line {
+    color: lightgrey;
+    border: 1px solid;
+    position: absolute;
+    left: 1142px;
+    top: 0;
+    bottom: 0;
+}
+
+.horizontal-lines {
+    color: lightgrey;
+    width: 100%;
+    border: 2px solid;
+    position: absolute;
+    display: flex;
+    padding-top: 2px;
+    top: 287px;
+}
+
+.under-banner-text {
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+}
+
+.main-info-images-div {
+    display: flex;
+    position: absolute;
+    padding: 32px 24px 16px 8px;
+    margin-left: 1134px;
+    flex-flow: column wrap;
+    
     
 }
 
-#main-info-div {
-
-
+.main-info-img {
+    width: 35%;
+    height: auto;
+    
 }
 
 .main-info-banner {
@@ -145,3 +201,27 @@ img {
     font-weight: 500;
     padding: 32px 24px;
 }
+
+.orientation {
+    padding: 0 24px 0px 16px;
+}
+
+.campus {
+    padding: 16px 24px 0px 16px;
+}
+
+.guest {
+    padding: 16px 24px 16px 16px;
+    background-color: lightgrey;
+    width: 100%;
+    height: auto;
+   
+}   
+
+.main-info-headers {
+    
+    float: right;
+    font-weight: 600;
+    font-size: 38px;
+}
+
