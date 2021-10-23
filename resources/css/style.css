@@ -26,9 +26,7 @@ body {
   color: rgb(73, 72, 72);  
 }
 
-img {
-    vertical-align: top;
-}
+
 
 .header {
     
@@ -37,7 +35,6 @@ img {
     width: 100%;
     left: 0;
     top: 0;
-    z-index: 50;
     
 }
 
@@ -54,18 +51,16 @@ img {
     line-height: 2.7em;
 }
 
-
 .header-list {
     position: absolute;
     display: flex; 
     font-size: 30px;
     font-weight: 500;
     line-height: 2em;
-    right: 24px;
-    
+    right: 24px;  
 }
 
-a {
+.header-list-item {
     color: rgb(73, 72, 72); 
     padding-left: 16px;
 }
@@ -134,47 +129,7 @@ a {
     display: flex;
     flex-direction: column;
     position: relative;
-}
-
-.vertical-line {
-    color: lightgrey;
-    border: 1px solid;
-    position: absolute;
-    left: 1142px;
-    top: 0;
-    bottom: 0;
-}
-
-.horizontal-lines {
-    color: lightgrey;
-    width: 100%;
-    border: 2px solid;
-    position: absolute;
-    display: flex;
-    padding-top: 2px;
-    top: 287px;
-}
-
-.under-banner-text {
-    display: flex;
-    flex-direction: column;
-    width: 60%;
-}
-
-.main-info-images-div {
-    display: flex;
-    position: absolute;
-    padding: 32px 24px 16px 8px;
-    margin-left: 1134px;
-    flex-flow: column wrap;
-    
-    
-}
-
-.main-info-img {
-    width: 35%;
-    height: auto;
-    
+    padding-bottom: px;
 }
 
 .main-info-banner {
@@ -192,36 +147,125 @@ a {
     font-size: 25px;
     font-weight: 400;
     padding-left: 24px;
-    
     line-height: 1.5;
 }
 
 .signature {
     font-size: 22px;
     font-weight: 500;
-    padding: 32px 24px;
+    padding: 62px 0 40px 24px;
 }
 
-.orientation {
-    padding: 0 24px 0px 16px;
+
+.vertical-line {
+    
+    color: lightgrey;
+    border: 1px solid;
+    position: absolute;
+    left: 1142px;
+    top: 0;
+    bottom: 0;
 }
 
-.campus {
-    padding: 16px 24px 0px 16px;
-}
-
-.guest {
-    padding: 16px 24px 16px 16px;
-    background-color: lightgrey;
+.horizontal-lines {
+    color: lightgrey;
     width: 100%;
+    border: 2px solid;
+    position: absolute;
+    display: flex;
+    padding-top: 2px;
+    top: 330px;
+}
+
+.under-banner-text {
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+}
+
+.main-info-images-div {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    padding: 32px 24px 16px 8px;
+    margin-left: 1134px;
+    width: 45%;
+    
+}
+
+.main-info-img {
+    display: flex;
+    flex-direction: row;
     height: auto;
+  
+    padding-left: 0px;
+    float: right;
+}
+
+
+.photos-and-headers-1 {
+    display: flex;
+    flex-direction: row;
+    
+}
+
+.photos-and-headers-2 {
+    display: flex;
    
-}   
+
+}
+
+.photos-and-headers-3 {
+    display: flex;
+    flex-direction: row;
+    background-color: lightgrey;
+   
+    
+}
 
 .main-info-headers {
-    
-    float: right;
-    font-weight: 600;
-    font-size: 38px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 65%;
+    font-size: 1.3em;
+    padding-left: 50px;
+    line-height: 1.7;
 }
 
+.small-img-1 {
+    width: 35%;
+    height: auto;
+    padding: 0 0 38px 18px;
+    
+}
+
+.small-img-2 {
+    width: 35%;
+    height: auto;
+    padding: 20px 0 16px 18px;
+
+}
+
+.small-img-3 {
+    width: 35%;
+    height: auto;
+    padding: 16px 0 16px 18px;
+    
+}
+
+/*start-learning-section*/
+
+.start-learning {
+    background-color: lightgray;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.start-learning-header {
+    padding: 32px 0;
+    text-align: center;
+    font-size: 34px;
+    font-weight: 500;
+}
