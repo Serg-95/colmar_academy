@@ -24,12 +24,34 @@ body {
   font-family: Montserrat;
   font-size: 16px;
   color: rgb(73, 72, 72);  
+ 
 }
 
 
+.img {
+    width: 100%;
+    height: auto;        
+        
+}
 
-.header {
-    
+.main {
+    flex: 1 1 auto;
+}
+
+.body,
+#banner-div,
+#main-info-div,
+.start-learning,
+#thesis-exhibit,
+.learn-container, 
+.mobile-learn-container,
+.main-info-container,
+.footer {
+    border-left: 2px solid gray;
+    border-right: 1px solid gray;
+}
+
+.header-desktop {
     display: flex;
     height: 64px;
     width: 100%;
@@ -37,6 +59,72 @@ body {
     top: 0;
     
 }
+
+.header-mobile-list {
+    display: none;
+}
+
+/* for mobile */
+
+@media only screen and (max-width: 768px) {
+
+    html {
+        overflow-x: hidden;
+    }
+
+    .header-desktop {
+        display: none;
+    }  
+    
+    .header-mobile-list {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        height: 64px;
+    }
+
+    
+   
+
+    .learn-container {
+        width: 100%;
+        
+        flex-direction: column;
+       
+    }
+    
+    .learn-smth {
+        margin: 0px 0px;
+        
+    }   
+
+
+
+    .main-info-img,
+    .under-banner-text,
+    .horizontal-lines {
+        display: none;
+    }
+
+
+   
+
+   
+
+     
+}
+
+
+
+
+
+
+
+     
+
+
+
 
 .hearer-logo {
     height: 50px;
@@ -51,13 +139,14 @@ body {
     line-height: 2.7em;
 }
 
-.header-list {
+.header-desktop-list {
     position: absolute;
     display: flex; 
     font-size: 30px;
     font-weight: 500;
     line-height: 2em;
     right: 24px;  
+    
 }
 
 .header-list-item {
@@ -74,46 +163,84 @@ body {
 .wrapper {
     min-height: 100%;
     overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+
 }
 
-#banner-div {
-    display: flex;
-    width: 100%;
-    top: 64px;
-    background-color: lightgray;
-    align-items: center;
-    
-}
 
 .banner-text {
+   font-size: large; 
    display: flex;
    flex-direction: column;
-   width: 100%;
-   margin: 24px 0px;
-  
+   justify-content: center;  
 }
 
-.start-here {
+@media (max-width: 768px) {
+    .mobile-banner-text {
+        display: flex;
+        flex-direction: column;
+        padding-left: 16px;
+        max-width: 97.5%;
+        
+    }
+
+}
+
+
+.banner-text input {
     text-align: center;
-    font-size: 33px;
-    background-color: rgb(73, 72, 72); 
+    padding: 8px 10px;
+    border-radius: 4px;
     color: white;
-    padding: 8px 75px;
-    width: 75%;
-    
+    background-color: #3f3838;
+    cursor: pointer;
+    font-size: 28px;
+    margin-bottom: 32px;
+}
+
+@media (max-width:768px) {
+    .banner-text input {
+        background-color: #8b8484;
+        font-size: 28px;
+        margin-bottom: 32px;
+        padding: 20px 10px;
+    }
+}
+
+
+
+
+.learn-container {
+    display: flex;
+    margin: 0 auto;
+    background-color: lightgray;
+    max-width: 100%;
 }
 
 .banner {
-    padding: 32px 24px;
-    width: 60%;
-    
+    margin: 32px 24px;
+    flex-flow: wrap row;
+    height: auto;
+    max-width: 100%;
 }
 
+
+@media (max-width:768px) {
+    .mobile-banner {
+        margin: 0;
+        
+    }
+}
+
+
+
 .learn-smth {
-    
+    padding-top: 5px;
     font-weight: 700;
     font-size: 70px;
-    line-height: 1.2;
+    line-height: 1.1;
     
 }
 
@@ -125,91 +252,139 @@ body {
     
 }
   
+@media (max-width: 768px) {
+    .lorem {
+        padding: 20px 0 27px 0;
+    }
+}
+
+
 /*Main info section*/
 
-#main-info-div {
+.main-info-container {
+    display: flex;
+    flex-direction: row;
+    
+}
+
+
+@media (max-width: 768px) {
+    .main-info-container {
+        display: flex;
+        flex-direction: column;
+        
+    }
+}
+
+.main-info-banner-and-text {
     display: flex;
     flex-direction: column;
-    position: relative;
-    padding-bottom: px;
+    max-width: 60%;
+    margin-right: 2px;
+}
+
+@media (max-width: 768px) {
+    .main-info-banner-and-text {
+        display: none;
+        
+        
+    }
 }
 
 .main-info-banner {
-    padding: 32px 24px;
-    width: 60%;
+    margin: 32px 24px 25px 24px;
+    flex-flow: wrap row;
 }
 
 .main-info-header {
     font-size: 50px;
     font-weight: 800;
-    padding: 0 0 32px 24px;
+    margin-bottom: 25px;
+   
 }
 
 .curabitur {
     font-size: 25px;
     font-weight: 400;
-    padding-left: 24px;
     line-height: 1.5;
 }
 
 .signature {
     font-size: 22px;
     font-weight: 500;
-    padding: 62px 0 40px 24px;
+    padding: 84px 0 32px 0;
 }
 
 
 .vertical-line {
-    
     color: lightgrey;
     border: 1px solid;
-    position: absolute;
-    left: 1142px;
-    top: 0;
-    bottom: 0;
+    position: relative;
+    left: 1152px;
+    
+    
 }
 
 .horizontal-lines {
+    width: 39.3%;
     color: lightgrey;
-    width: 100%;
     border: 2px solid;
     position: absolute;
-    display: flex;
     padding-top: 2px;
-    top: 330px;
+    top: 1279px;
+    
+  
+   
 }
 
 .under-banner-text {
-    display: flex;
-    flex-direction: column;
-    width: 60%;
+    
+    margin-left: 24px;
+    
 }
 
 .main-info-images-div {
     display: flex;
     flex-direction: column;
-    position: absolute;
-    padding: 32px 24px 16px 8px;
-    margin-left: 1134px;
-    width: 45%;
+    margin: 32px 0 32px 8px;
+    max-width: 100%;
+    
 }
 
-.main-info-img {
-    display: flex;
-    flex-direction: row;
-    height: auto;
-    padding-left: 0px;
-    float: right;
+@media (max-width: 768px) {
+    .main-info-images-div {
+        margin: 16px 16px 0px 16px;
+        background-color: white;
+        
+    }
 }
 
+.main-info-images-div:last-child {
+    padding-bottom: 0px;
+}
 
 .photos-and-headers-1 {
     display: flex;
     flex-direction: row;
 }
 
+@media (max-width: 768px) {
+    .photos-and-headers-1 {
+        display: flex;
+        flex-direction: column;
+        
+    }
+}
+
 .photos-and-headers-2 {
     display: flex;
+}
+
+@media (max-width: 768px) {
+    .photos-and-headers-2 {
+        display: flex;
+        flex-direction: column;
+    }
 }
 
 .photos-and-headers-3 {
@@ -218,33 +393,128 @@ body {
     background-color: lightgrey;
 }
 
-.main-info-headers {
+@media (max-width: 768px) {
+    .photos-and-headers-3 {
+        display: flex;
+        flex-direction: column;
+        background-color: white;
+    }
+}
+
+.main-info-headers-1 {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    width: 65%;
     font-size: 1.3em;
     padding-left: 50px;
     line-height: 1.7;
 }
 
+@media (max-width: 768px) {
+    .main-info-headers-1 {
+        padding: 40px 15px;
+    }
+}
+
+.main-info-headers-2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-size: 1.3em;
+    padding-left: 50px;
+    line-height: 1.7;
+}
+
+@media (max-width: 768px) {
+    .main-info-headers-2 {
+        padding: 40px 15px;
+    }
+}
+
+.main-info-headers-3 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-size: 1.3em;
+    padding-left: 50px;
+    line-height: 1.7;
+}
+
+@media (max-width: 768px) {
+    .main-info-headers-3 {
+        padding: 40px 0 32px 16px;
+    }
+}
+
+
+
+
+
 .small-img-1 {
-    width: 35%;
-    height: auto;
+    
     padding: 0 0 38px 18px;
 }
 
+
+@media (max-width: 768px) {
+    .small-img-1 {
+        display: none;
+    }
+}
+
+
+.mobile-small-img-1 {
+    
+}
+
+@media (min-width: 768px) {
+    .mobile-small-img-1 {
+        display: none;
+    }
+}
+
+
 .small-img-2 {
-    width: 35%;
-    height: auto;
-    padding: 20px 0 16px 18px;
+    padding: 24px 0 16px 18px;
+}
+
+@media (max-width: 768px) {
+    .small-img-2 {
+        display: none;
+    }
+}
+
+.mobile-small-img-2 {
+
+}
+
+@media (min-width: 768px) {
+    .mobile-small-img-2 {
+        display: none;
+    }
 }
 
 .small-img-3 {
-    width: 35%;
-    height: auto;
+    
     padding: 16px 0 16px 18px;
 }
+
+@media (max-width: 768px) {
+    .small-img-3 {
+        display: none;
+    }
+}
+
+.mobile-small-img-3 {
+
+}
+
+@media (min-width: 768px) {
+    .mobile-small-img-3 {
+        display: none;
+    }
+}
+
 
 /*start-learning-section*/
 
@@ -384,9 +654,11 @@ body {
     display: flex;
     flex-direction: row;
     background-color: lightgrey;
+   
 }
 
 .fisma-image {
+
     padding: 16px;
 }
 
@@ -394,7 +666,9 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: center;
+
     line-height: 1.7;
+
 }
 
 
