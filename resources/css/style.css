@@ -69,10 +69,6 @@ body {
 
 @media only screen and (max-width: 768px) {
 
-    html {
-        overflow-x: hidden;
-    }
-
     .header-desktop {
         display: none;
     }  
@@ -85,47 +81,17 @@ body {
         height: 64px;
     }
 
-    
-   
-
     .learn-container {
         width: 100%;
-        
         flex-direction: column;
-       
     }
     
-    .learn-smth {
-        margin: 0px 0px;
-        
-    }   
-
-
-
     .main-info-img,
     .under-banner-text,
     .horizontal-lines {
         display: none;
     }
-
-
-   
-
-   
-
-     
 }
-
-
-
-
-
-
-
-     
-
-
-
 
 .hearer-logo {
     height: 50px;
@@ -147,7 +113,6 @@ body {
     font-weight: 500;
     line-height: 2em;
     right: 24px;  
-    
 }
 
 .header-list-item {
@@ -157,9 +122,7 @@ body {
 
 .menu-item {
     margin: 0 0 0 16px;
-    
 }
-
 
 .wrapper {
     min-height: 100%;
@@ -167,9 +130,7 @@ body {
     display: flex;
     flex-direction: column;
     margin: 0 auto;
-
 }
-
 
 .banner-text {
    font-size: large; 
@@ -184,11 +145,8 @@ body {
         flex-direction: column;
         padding-left: 16px;
         max-width: 97.5%;
-        
     }
-
 }
-
 
 .banner-text input {
     text-align: center;
@@ -210,9 +168,6 @@ body {
     }
 }
 
-
-
-
 .learn-container {
     display: flex;
     margin: 0 auto;
@@ -227,22 +182,17 @@ body {
     max-width: 100%;
 }
 
-
 @media (max-width:768px) {
     .mobile-banner {
         margin: 0;
-        
     }
 }
-
-
 
 .learn-smth {
     padding-top: 5px;
     font-weight: 700;
     font-size: 70px;
     line-height: 1.1;
-    
 }
 
 .lorem {
@@ -250,7 +200,6 @@ body {
     font-size: 38px;
     padding-top: 40px;
     padding-bottom: 60px;
-    
 }
   
 @media (max-width: 768px) {
@@ -259,21 +208,17 @@ body {
     }
 }
 
-
 /*Main info section*/
 
 .main-info-container {
     display: flex;
     flex-direction: row;
-    
 }
-
 
 @media (max-width: 768px) {
     .main-info-container {
         display: flex;
         flex-direction: column;
-        
     }
 }
 
@@ -287,8 +232,6 @@ body {
 @media (max-width: 768px) {
     .main-info-banner-and-text {
         display: none;
-        
-        
     }
 }
 
@@ -314,7 +257,6 @@ body {
     font-weight: 500;
     padding: 84px 0 32px 0;
 }
-
 
 .vertical-line {
     color: lightgrey;
@@ -402,7 +344,6 @@ body {
     }
 }
 
-
 .main-info-headers-1 {
     display: flex;
     flex-direction: column;
@@ -450,15 +391,10 @@ body {
     }
 }
 
-
-
-
-
 .small-img-1 {
     
     padding: 0 0 38px 18px;
 }
-
 
 @media (max-width: 768px) {
     .small-img-1 {
@@ -467,16 +403,11 @@ body {
 }
 
 
-.mobile-small-img-1 {
-    
-}
-
 @media (min-width: 768px) {
     .mobile-small-img-1 {
         display: none;
     }
 }
-
 
 .small-img-2 {
     padding: 24px 0 16px 18px;
@@ -486,10 +417,6 @@ body {
     .small-img-2 {
         display: none;
     }
-}
-
-.mobile-small-img-2 {
-
 }
 
 @media (min-width: 768px) {
@@ -509,10 +436,6 @@ body {
     }
 }
 
-.mobile-small-img-3 {
-
-}
-
 @media (min-width: 768px) {
     .mobile-small-img-3 {
         display: none;
@@ -521,6 +444,7 @@ body {
 
 
 /*start-learning-section*/
+
 
 .start-learning {
     background-color: lightgray;
@@ -588,6 +512,7 @@ body {
     font-size: 32px;
     margin: ;
 }
+
 .courses,
 .courses-description {
     font-size: 21px;
@@ -605,7 +530,6 @@ body {
 
 
 .mobile-start-learning-container {
-    
     margin-bottom: 24px;
 }
 
@@ -619,21 +543,17 @@ body {
     padding: 24px 16px;
     margin: 8px 16px;
     background-color: lightgray;
-    
 }
 
 @media (min-width: 768px) {
     .start-learning-items {
         display: none;
-        
     }
 }  
-    
-
-
 
 
 /*--Line-2--*/
+
 
 .line-2 {
     display: flex;
@@ -689,6 +609,7 @@ body {
 
 /*Thesis exhibit section*/
 
+
 .thesis-exhibit-header {
     padding: 32px 0;
     text-align: center;
@@ -725,7 +646,6 @@ body {
 }
 
 .fisma-image {
-
     padding: 16px;
 }
 
@@ -743,7 +663,6 @@ body {
 
 .now-and-then-image {
     padding: 16px;
-   
 }
 
 .now-and-then-text {
@@ -761,9 +680,7 @@ body {
     font-size: 25px;
     font-weight: 400;
     line-height: 1.5;
-    
 }
-
 
 @media (max-width: 768px) {
     .under-video-header,
@@ -796,7 +713,6 @@ body {
     height: 60px;
     border-top: 1px solid lightgray;
     padding-left: 24px;
-    
 }
 
 @media (max-width: 768px) {
@@ -809,7 +725,6 @@ body {
     display: flex;
     flex-direction: row;
     padding-right: 24px;
-
 }
 
 .terms {
@@ -817,8 +732,7 @@ body {
 }
 
 @media (max-width: 768px) {
-    .copyrights,
-    {
+    .copyrights {
         padding-top: 35px;
         padding-bottom: 20px;
     }
