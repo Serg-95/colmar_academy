@@ -195,11 +195,18 @@ body {
     line-height: 1.1;
 }
 
+@media (max-width: 768px) {
+    .learn-smth {
+        font-size: 60px;
+    }
+}
+
 .lorem {
     font-weight: 600;
     font-size: 38px;
     padding-top: 40px;
     padding-bottom: 60px;
+    line-height: 1.3;
 }
   
 @media (max-width: 768px) {
